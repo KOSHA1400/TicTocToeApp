@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="StartActivity"
+   android:background="@drawable/a" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerInParent="true">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="32dp"
+            android:text="نوع مهره را انتخاب نمایید"
+            android:gravity="center"
+            android:layout_marginBottom="32dp"
+            android:textColor="#7F3131"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center">
+
+            <TextView
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:textSize="32dp"
+            android:text="Player 1:"
+                android:textColor="#3949AB"/>
+
+            <RadioGroup
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:id="@+id/radio_group_player1"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/p1radioButton_x"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="X"
+                    android:layout_marginTop="20dp"
+                    android:textSize="23dp"
+                    android:layout_marginEnd="32dp"
+                    android:textColor="#F00"
+                    />
+
+                <RadioButton
+                    android:id="@+id/p1radioButton_o"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="O"
+                    android:layout_marginTop="20dp"
+                    android:textSize="23dp"
+                    android:textColor="#039BE5"/>
+            </RadioGroup>
+
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center">
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:textSize="32dp"
+                android:text="Player 2:"
+                android:textColor="#004D40"/>
+
+            <RadioGroup
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:id="@+id/radio_group_player2"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/p2radioButton_x"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="X"
+                    android:layout_marginTop="20dp"
+                    android:textSize="23dp"
+                    android:layout_marginEnd="32dp"
+                    android:textColor="#F00"/>
+
+                <RadioButton
+                    android:id="@+id/p2radioButton_o"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="O"
+                    android:layout_marginTop="20dp"
+                    android:textSize="23dp"
+                    android:textColor="#039BE5"/>
+
+            </RadioGroup>
+
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_start_game"
+            android:layout_marginTop="64dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="26sp"
+            android:text="اجرای بازی"
+            android:layout_gravity="center" />
+
+    </LinearLayout>
+
+</RelativeLayout>
